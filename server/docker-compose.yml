@@ -1,0 +1,17 @@
+version: "3"
+services:
+  server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "5000:5000"
+      - "5050:5050"
+    volumes:
+      - .:/app
+    environment:
+      - MONGODB_USER=${MONGODB_USER}
+      - MONGODB_PASS=${MONGODB_PASS}
+      - PORT=${PORT}
+      - SOCKET_PORT=${SOCKET_PORT}
+    command: yarn "start"
