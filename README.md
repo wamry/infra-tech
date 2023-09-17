@@ -1,9 +1,9 @@
 # Web
 
-### setup web project
+### Install packages on web project
 run `yarn`
 
-### setup web project env
+### Environment setup for web project
 create `.env` file in project root directory
 put these env values in it
 ```
@@ -11,17 +11,17 @@ put these env values in it
   REACT_APP_SOCKET_URL=http://0.0.0.0:5050
 ```
 
-### run web project
+### Run web project :rocket:
 run `yarn docker:start`
 
 -----------------------------------------------------------------
 
 # Server
 
-### setup server project
+### Install packages on server project
 run `cd server && yarn`
 
-### setup server project env
+### Environment setup for server project
 create `.env` file in ./server directory
 put these env values in it
 ```
@@ -31,6 +31,6 @@ put these env values in it
   MONGODB_PASS=metromanpassword
 ```
 
-### run server project
+### Run server project :rocket:
 run `cd server && yarn docker:start`
 
