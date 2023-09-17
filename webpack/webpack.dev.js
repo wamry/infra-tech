@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const { merge } = require('webpack-merge')
 const webpackCommon = require('./webpack.common.js')
 const paths = require('../config/paths')
@@ -29,9 +28,6 @@ module.exports = merge(webpackCommon, {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
-    }),
-    new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
-      PUBLIC_URL: '/',
     }),
   ],
 })
